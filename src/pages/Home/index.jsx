@@ -1,9 +1,11 @@
 import { Pokemon } from '../../components/Pokemon';
+import styles from './styles.module.css';
+import PokemonLogo from '../../assets/images/Pokemon-Logo.png';
 
 export const Home = () => {
   return (
-    <div>
-      <h1>Meu site Pokemon</h1>
+    <div className={styles.container}>
+      <img className={styles.image} src={PokemonLogo} alt="Pokemon Logo" />
       <Pokemon name="Pikachu" />
       <Pokemon name="Sharizard" />
       <Pokemon name="Squirtle" />
