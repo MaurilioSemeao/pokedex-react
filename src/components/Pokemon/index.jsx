@@ -1,5 +1,7 @@
+import styles from './styles.module.css';
+
 export const Pokemon = ({ name = 'Pikachu' }) => {
-  return <h2>Nome Do Pokemon: {name}</h2>;
+  return <h2 className={styles.title}>Nome Do Pokemon: {name}</h2>;
 };
 
 // import React from 'react';
